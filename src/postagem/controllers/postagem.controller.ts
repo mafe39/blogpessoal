@@ -39,8 +39,8 @@ export class PostagemController {
   }
   @Put()
   @HttpCode(HttpStatus.OK)
-  uptade(@Body() postagem: Postagem): Promise<Postagem> {
-    return this.postagemService.uptade(postagem);
+  update(@Body() postagem: Postagem): Promise<Postagem> {
+    return this.postagemService.update(postagem);
   }
   @Delete('/:id')
   @HttpCode(HttpStatus.NO_CONTENT)
