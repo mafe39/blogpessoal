@@ -12,7 +12,10 @@ import {
 } from '@nestjs/common';
 import { Tema } from '../entities/tema.entity';
 import { TemaService } from '../services/tema.service';
+import { JwtAuthGuard } from '../../auth/guard/jwt-auth.guard';
+import { UseGuards } from '@nestjs/common';
 
+@UseGuards(JwtAuthGuard)
 @Controller('/temas')
 export class TemaController {
   constructor(private readonly temaService: TemaService) {}
