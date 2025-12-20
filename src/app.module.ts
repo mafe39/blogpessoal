@@ -19,7 +19,7 @@ import { DevService } from './data/services/dev.service';
     PostagemModule,
     TemaModule,
     AuthModule,
-    UsuarioModule
+    UsuarioModule,
   ],
   controllers: [AppController],
   providers: [],
